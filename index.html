@@ -24,7 +24,7 @@
       "description": "Guía completa sobre los beneficios de invertir en un lote campestre en el Valle del Cauca, con información de nuestros proyectos en Dapa y Palmira.",
       "publisher": {
         "@type": "RealEstateAgent",
-        "name": "Tu Proyecto Inmobiliario",
+        "name": "Asesorías y parcelaciones CH",
         "url": "https://tu-dominio.com",
         "logo": {
           "@type": "ImageObject",
@@ -54,7 +54,7 @@
             color: var(--color-titulo); 
         }
         .hero-gradient {
-            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
         }
         .table-custom {
             border-collapse: separate;
@@ -82,6 +82,13 @@
         .header-scrolled .nav-link:hover {
             color: var(--color-cta);
         }
+        /* ===== CORRECCIÓN PARA VISIBILIDAD EN MÓVIL ===== */
+        .header-scrolled #mobile-menu-button {
+            color: var(--color-texto); /* Cambia el color del icono a oscuro */
+        }
+        .header-scrolled #mobile-menu-button:hover {
+            background-color: rgba(0,0,0,0.05); /* Añade un fondo sutil al pasar el mouse */
+        }
         /* ========= NUEVOS ESTILOS PARA EL BOTÓN FLOTANTE (FAB) ========= */
         .fab-options {
             transition: opacity 0.3s ease, transform 0.3s ease;
@@ -93,7 +100,7 @@
 </head>
 <body class="antialiased">
 
-   <!-- ========= HEADER ELEGANTE Y FUNCIONAL ========= -->
+    <!-- ========= HEADER ELEGANTE Y FUNCIONAL ========= -->
     <nav id="main-nav" class="fixed top-0 left-0 w-full z-40 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
@@ -150,16 +157,20 @@
     </nav>
 
     <!-- ========= SECCIÓN HERO: El Primer Impacto Emocional ========= -->
-    <header class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+    <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
         <div class="absolute inset-0">
-            <img src="https://ftyatux.stripocdn.email/content/guids/CABINET_39e0f84f4f8b2b9ec7be86c3a8be9dec1bd7c04840e37cf10861a776dd82a39e/images/proyecto_nuevo.jpg" 
+            <img src="https://ftyatux.stripocdn.email/content/guids/CABINET_39e0f84f4f8b2b9ec7be86c3a8be9dec1bd7c04840e37cf10861a776dd82a39e/images/proyecto_nuevo_2.jpg" 
                  alt="Impresionante atardecer sobre las montañas del Valle del Cauca, visto desde un lote campestre." 
                  class="w-full h-full object-cover">
         </div>
         <div class="absolute inset-0 hero-gradient"></div>
-        <div class="relative z-10 px-4">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-shadow-lg" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Adiós al Estrés. Hola, Futuro.</h1>
-            <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto font-light" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">Descubre por qué invertir en un lote campestre es la mejor decisión para tu salud y la de tu familia.</p>
+        <div class="relative z-10 px-4 text-white">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">
+                Adiós al Estrés. Hola, Futuro.
+            </h1>
+            <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto font-light" style="text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);">
+                Descubre por qué invertir en un lote campestre es la mejor decisión para tu salud y la de tu familia.
+            </p>
         </div>
     </header>
 
@@ -305,7 +316,7 @@
         </section>
     </main>
 
-    <!-- ========= NUEVO FOOTER CON REDES SOCIALES ========= -->
+    <!-- ========= FOOTER CON REDES SOCIALES ========= -->
     <footer class="bg-[var(--color-titulo)] text-white py-12 px-6">
         <div class="max-w-7xl mx-auto text-center">
             <h3 class="text-2xl font-bold font-['Playfair_Display'] mb-2">Comparte esta Oportunidad</h3>
@@ -331,7 +342,7 @@
         </div>
     </footer>
 
-    <!-- ========= NUEVO BOTÓN DE ACCIÓN FLOTANTE (FAB) ========= -->
+    <!-- ========= BOTÓN DE ACCIÓN FLOTANTE (FAB) ========= -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-center">
         <!-- Opciones del FAB (inicialmente ocultas) -->
         <div id="fab-options" class="flex flex-col items-center space-y-3 mb-3 fab-options opacity-0 transform scale-95 pointer-events-none">
@@ -358,7 +369,7 @@
         </button>
     </div>
 
-    <!-- JavaScript para la interactividad del Header y los nuevos elementos -->
+    <!-- JavaScript para la interactividad -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // --- Lógica del Header ---
@@ -390,7 +401,7 @@
                 });
             });
 
-            // --- NUEVA LÓGICA PARA COMPARTIR EN REDES (FOOTER) ---
+            // --- Lógica para compartir en redes (Footer) ---
             const pageUrl = encodeURIComponent(window.location.href);
             const pageTitle = encodeURIComponent(document.title);
 
@@ -398,7 +409,7 @@
             document.getElementById('share-twitter').href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
             document.getElementById('share-whatsapp').href = `https://api.whatsapp.com/send?text=${pageTitle}%20${pageUrl}`;
 
-            // --- NUEVA LÓGICA PARA EL BOTÓN DE ACCIÓN FLOTANTE (FAB) ---
+            // --- Lógica para el Botón de Acción Flotante (FAB) ---
             const fabMainBtn = document.getElementById('fab-main');
             const fabOptions = document.getElementById('fab-options');
             const fabShareBtn = document.getElementById('fab-share');
