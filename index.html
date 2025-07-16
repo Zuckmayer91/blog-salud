@@ -44,6 +44,9 @@
             --color-cta: #D35400;
             --color-cta-hover: #E67E22;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body { 
             background-color: var(--color-fondo); 
             color: var(--color-texto); 
@@ -113,9 +116,10 @@
 
                 <!-- Menú de Navegación para Escritorio -->
                 <div class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="#beneficios" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Beneficios</a>
-                    <a href="#proyectos" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Proyectos</a>
-                    <a href="#inversion" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Inversión</a>
+                    <a href="#beneficios" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">¿Por qué cambiar?</a>
+                    <a href="#proyectos" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Vida Campestre</a>
+                    <a href="#inversion" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Inversión con Propósito</a>
+                    <a href="#donde-invertir" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Dónde Invertir</a>
                 </div>
 
                 <!-- Botón CTA y Menú Hamburguesa -->
@@ -145,8 +149,9 @@
         <div id="mobile-menu" class="md:hidden hidden bg-white">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#beneficios" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Beneficios</a>
-                <a href="#proyectos" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Proyectos</a>
+                <a href="#proyectos" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Vida Campestre</a>
                 <a href="#inversion" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Inversión</a>
+                <a href="#donde-invertir" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Dónde Invertir</a>
             </div>
             <div class="pt-4 pb-3 border-t border-gray-200">
                  <a href="https://wa.link/xc6a7s" target="_blank" rel="noopener noreferrer" class="block w-11/12 mx-auto text-center bg-[var(--color-cta)] text-white px-5 py-3 rounded-md font-bold text-base hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
@@ -293,9 +298,59 @@
             </div>
         </section>
 
+        <!-- ========= NUEVA SECCIÓN: Dónde Invertir ========= -->
+        <section id="donde-invertir" class="py-16 md:py-24 px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold">Elige Tu Próximo Horizonte</h2>
+                    <p class="mt-4 text-lg max-w-3xl mx-auto">Te presentamos dos proyectos únicos, pensados para quienes buscan exclusividad, naturaleza y una conexión real con el entorno.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Tarjeta Proyecto 1: Palo Alto -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/600x400/556B2F/FFFFFF?text=Palo+Alto" 
+                                 alt="Vista panorámica del proyecto de lotes campestres Palo Alto en Palmira." 
+                                 class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                            <h3 class="absolute bottom-4 left-4 text-3xl font-bold text-white font-['Playfair_Display']" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">Proyecto Palo Alto</h3>
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col">
+                            <p class="text-base mb-6 flex-grow">Ubicado en Palmira, Palo Alto ofrece un refugio de paz con un clima ideal. Es el lugar perfecto para construir la casa de campo que siempre has soñado, rodeado de paisajes verdes y tranquilidad.</p>
+                            <a href="https://ventadelotescampestresenpalmira.aypch.com/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="mt-auto text-center bg-[var(--color-cta)] text-white px-8 py-3 rounded-md font-bold text-base hover:bg-[var(--color-cta-hover)] transition-all transform group-hover:scale-105 shadow-lg">
+                                Ver Proyecto Palo Alto
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Tarjeta Proyecto 2: Cascadas de Dapa -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="relative">
+                            <img src="https://placehold.co/600x400/2C3E50/FFFFFF?text=Cascadas+de+Dapa+2" 
+                                 alt="Paisaje montañoso y fresco del proyecto Cascadas de Dapa 2." 
+                                 class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                            <h3 class="absolute bottom-4 left-4 text-3xl font-bold text-white font-['Playfair_Display']" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">Cascadas de Dapa 2</h3>
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col">
+                            <p class="text-base mb-6 flex-grow">En el corazón de Dapa, este proyecto te sumerge en un microclima fresco y vistas espectaculares. Ideal para quienes valoran la exclusividad y un estilo de vida conectado con la majestuosidad de la montaña.</p>
+                            <a href="https://ventadelotescampestresenpalmira.aypch.com/lotes-en-venta-cali/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="mt-auto text-center bg-[var(--color-cta)] text-white px-8 py-3 rounded-md font-bold text-base hover:bg-[var(--color-cta-hover)] transition-all transform group-hover:scale-105 shadow-lg">
+                                Descubrir Cascadas de Dapa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ========= CTA FINAL: La Llamada a la Acción ========= -->
-        <section class="py-16 md:py-24 px-6">
-            <div class="max-w-3xl mx-auto text-center bg-white p-8 md:p-12 rounded-lg shadow-2xl">
+        <section class="py-16 md:py-24 px-6 bg-white">
+            <div class="max-w-3xl mx-auto text-center bg-[var(--color-fondo)] p-8 md:p-12 rounded-lg shadow-2xl">
                 <h2 class="text-3xl md:text-4xl font-bold">¿Estás Listo para Dar el Siguiente Paso?</h2>
                 <p class="mt-6 text-lg">
                     Si has llegado hasta aquí, es porque sientes el llamado. Quieres escapar del ruido, respirar más profundo y darle a tu familia la calidad de vida que se merece.
@@ -393,11 +448,14 @@
                 closeIcon.classList.toggle('hidden');
             });
             
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    burgerIcon.classList.remove('hidden');
-                    closeIcon.classList.add('hidden');
+            document.querySelectorAll('#mobile-menu a, #main-nav a[href^="#"]').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Cierra el menú móvil si está abierto
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        burgerIcon.classList.remove('hidden');
+                        closeIcon.classList.add('hidden');
+                    }
                 });
             });
 
@@ -431,7 +489,8 @@
             });
             
             // Lógica para el botón de compartir del FAB
-            fabShareBtn.addEventListener('click', async () => {
+            fabShareBtn.addEventListener('click', async (event) => {
+                event.stopPropagation(); // Evita que se cierre el menú FAB al hacer clic
                 const shareData = {
                     title: document.title,
                     text: 'Echa un vistazo a esta increíble oportunidad de inversión.',
@@ -445,8 +504,19 @@
                         console.log('Contenido compartido exitosamente');
                     } else {
                         // Fallback para navegadores de escritorio: copiar al portapapeles
-                        await navigator.clipboard.writeText(window.location.href);
-                        alert('¡Enlace copiado al portapapeles!'); // Puedes reemplazar esto con un modal más elegante
+                        // Usamos el método execCommand por compatibilidad con iframes
+                        const textArea = document.createElement('textarea');
+                        textArea.value = window.location.href;
+                        document.body.appendChild(textArea);
+                        textArea.focus();
+                        textArea.select();
+                        try {
+                            document.execCommand('copy');
+                            alert('¡Enlace copiado al portapapeles!');
+                        } catch (err) {
+                            console.error('No se pudo copiar el enlace: ', err);
+                        }
+                        document.body.removeChild(textArea);
                     }
                 } catch (err) {
                     console.error('Error al compartir:', err);
