@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <title>Adiós al Estrés: Invierte en un Lote Campestre en el Valle del Cauca</title>
-    <meta name="description" content="Descubre cómo comprar un lote campestre en Dapa o Palmira puede transformar tu salud y calidad de vida. Una inversión inteligente para tu futuro y bienestar.">
+    <!-- SEO Meta Tags Optimizados -->
+    <title>Lotes Campestres en Venta en Valle del Cauca | Invierte en tu Salud</title>
+    <meta name="description" content="Encuentra lotes campestres en venta en Dapa y Palmira. Invierte en tierra, mejora tu calidad de vida y escapa del estrés de la ciudad. Asesoría experta en el Valle del Cauca.">
+    <meta name="keywords" content="lotes campestres en venta, lotes en venta valle del cauca, comprar lote palmira, lotes en dapa, invertir en tierra cali, asesorias y parcelaciones ch, calidad de vida, salud y bienestar">
+    <link rel="canonical" href="https://www.aypch.com/lotes-campestres-valle-del-cauca">
+
 
     <!-- Tailwind CSS y Google Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,22 +17,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Schema.org para SEO Avanzado -->
+    <!-- Schema.org para SEO Avanzado y Local -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Venta de Lotes Campestres en el Valle del Cauca: Invierte en tu Salud",
-      "url": "https://tu-dominio.com/lotes-campestres-salud/",
-      "description": "Guía completa sobre los beneficios de invertir en un lote campestre en el Valle del Cauca, con información de nuestros proyectos en Dapa y Palmira.",
-      "publisher": {
-        "@type": "RealEstateAgent",
-        "name": "Asesorías y parcelaciones CH",
-        "url": "https://tu-dominio.com",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://ftyatux.stripocdn.email/content/guids/CABINET_39e0f84f4f8b2b9ec7be86c3a8be9dec1bd7c04840e37cf10861a776dd82a39e/images/proyecto_nuevo.jpg"
+      "@type": "RealEstateAgent",
+      "name": "Asesorías y parcelaciones CH",
+      "url": "https://www.aypch.com/lotes-campestres-valle-del-cauca",
+      "logo": "https://ftyatux.stripocdn.email/content/guids/CABINET_50652b5a354224171e7e83e2fd8ffd668257837623729cd52dd9400f741cdab2/images/upscalemediatransformedremovebgpreview.png",
+      "telephone": "+573123456789",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Oficina Principal en Cali",
+        "addressLocality": "Cali",
+        "addressRegion": "Valle del Cauca",
+        "postalCode": "760001",
+        "addressCountry": "CO"
+      },
+      "description": "Expertos en la venta de lotes campestres y parcelaciones en el Valle del Cauca, con proyectos exclusivos en Dapa y Palmira. Te ayudamos a invertir en tu calidad de vida.",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Venta de Lotes Campestres en Palmira - Proyecto Palo Alto",
+          "description": "Lotes campestres en venta en Palmira, Valle del Cauca. Ideal para construir la casa de tus sueños en un entorno tranquilo y de alta valorización.",
+          "url": "https://ventadelotescampestresenpalmira.aypch.com/"
+        },
+        {
+          "@type": "Offer",
+          "name": "Venta de Lotes Campestres en Dapa - Proyecto Cascadas de Dapa 2",
+          "description": "Exclusivos lotes en venta en Dapa, con clima fresco y vistas espectaculares. Una inversión segura y un legado para tu familia.",
+          "url": "https://ventadelotescampestresenpalmira.aypch.com/lotes-en-venta-cali/"
         }
+      ],
+      "areaServed": {
+        "@type": "Place",
+        "name": "Valle del Cauca"
       }
     }
     </script>
@@ -85,19 +107,26 @@
         .header-scrolled .nav-link:hover {
             color: var(--color-cta);
         }
-        /* ===== CORRECCIÓN PARA VISIBILIDAD EN MÓVIL ===== */
         .header-scrolled #mobile-menu-button {
-            color: var(--color-texto); /* Cambia el color del icono a oscuro */
+            color: var(--color-texto);
         }
         .header-scrolled #mobile-menu-button:hover {
-            background-color: rgba(0,0,0,0.05); /* Añade un fondo sutil al pasar el mouse */
+            background-color: rgba(0,0,0,0.05);
         }
-        /* ========= NUEVOS ESTILOS PARA EL BOTÓN FLOTANTE (FAB) ========= */
         .fab-options {
             transition: opacity 0.3s ease, transform 0.3s ease;
         }
         .fab-main-button.rotate-45 {
             transform: rotate(45deg);
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
@@ -107,35 +136,28 @@
     <nav id="main-nav" class="fixed top-0 left-0 w-full z-40 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <a href="#" class="transition-transform duration-300 transform hover:scale-105">
-                        <img class="h-12 w-auto" src="https://ftyatux.stripocdn.email/content/guids/CABINET_50652b5a354224171e7e83e2fd8ffd668257837623729cd52dd9400f741cdab2/images/upscalemediatransformedremovebgpreview.png" alt="Logo de Tu Proyecto Inmobiliario">
+                    <a href="https://www.aypch.com/lotes-campestres-valle-del-cauca" class="transition-transform duration-300 transform hover:scale-105">
+                        <img class="h-12 w-auto" src="https://ftyatux.stripocdn.email/content/guids/CABINET_50652b5a354224171e7e83e2fd8ffd668257837623729cd52dd9400f741cdab2/images/upscalemediatransformedremovebgpreview.png" alt="Logo de Asesorías y Parcelaciones CH - Venta de Lotes">
                     </a>
                 </div>
-
-                <!-- Menú de Navegación para Escritorio -->
                 <div class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="#beneficios" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">¿Por qué cambiar?</a>
-                    <a href="#proyectos" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Vida Campestre</a>
-                    <a href="#inversion" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Inversión con Propósito</a>
-                    <a href="#donde-invertir" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Dónde Invertir</a>
+                    <a href="#beneficios" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Beneficios</a>
+                    <a href="#proyectos" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Vida campestre</a>
+                    <a href="#inversion" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">¿Por qué Invertir?</a>
+                    <a href="#donde-invertir" class="nav-link text-white font-medium hover:text-gray-300 transition-colors duration-300">Proyectos</a>
                 </div>
-
-                <!-- Botón CTA y Menú Hamburguesa -->
                 <div class="flex items-center">
-                     <a href="https://wa.link/xc6a7s" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-[var(--color-cta)] text-white px-5 py-2 rounded-md font-bold text-sm hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
-                        CONTACTAR
+                     <a href="https://wa.link/xc6a7s" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center justify-center space-x-2 bg-[var(--color-cta)] text-white px-5 py-2 rounded-md font-bold text-sm hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.13c-.28-.14-1.67-.82-1.93-.92-.26-.09-.45-.14-.64.14-.19.28-.73.92-.89 1.11-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.28.28-.47.09-.19.05-.36-.02-.51-.07-.14-.64-1.55-.87-2.12-.23-.58-.47-.48-.64-.48-.17 0-.36-.02-.55-.02-.19 0-.49.07-.74.35-.25.28-.96.94-.96 2.3 0 1.36.98 2.67 1.13 2.85.15.19 1.95 3.03 4.73 4.2.65.28 1.17.45 1.57.57.66.2 1.26.18 1.73.11.51-.07 1.67-.68 1.9-1.33.24-.65.24-1.21.17-1.33z" /></svg>
+                        <span>Hablar con un asesor</span>
                     </a>
-                    <!-- Botón Hamburguesa para Móvil -->
                     <div class="md:hidden ml-4">
                         <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition-colors duration-300">
                             <span class="sr-only">Abrir menú principal</span>
-                            <!-- Icono de hamburguesa -->
                             <svg class="h-6 w-6" id="burger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                             </svg>
-                            <!-- Icono de X (cerrar) -->
                              <svg class="h-6 w-6 hidden" id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -145,17 +167,17 @@
             </div>
         </div>
 
-        <!-- Menú Desplegable para Móvil -->
         <div id="mobile-menu" class="md:hidden hidden bg-white">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#beneficios" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Beneficios</a>
-                <a href="#proyectos" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Vida Campestre</a>
-                <a href="#inversion" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Inversión</a>
-                <a href="#donde-invertir" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Dónde Invertir</a>
+                <a href="#proyectos" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Vida campestre</a>
+                <a href="#inversion" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">¿Por qué Invertir?</a>
+                <a href="#donde-invertir" class="block px-3 py-2 rounded-md text-base font-medium text-[var(--color-texto)] hover:bg-gray-100">Proyectos</a>
             </div>
             <div class="pt-4 pb-3 border-t border-gray-200">
-                 <a href="https://wa.link/xc6a7s" target="_blank" rel="noopener noreferrer" class="block w-11/12 mx-auto text-center bg-[var(--color-cta)] text-white px-5 py-3 rounded-md font-bold text-base hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
-                    CONTACTAR
+                 <a href="https://wa.link/xc6a7s" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center space-x-2 w-11/12 mx-auto text-center bg-[var(--color-cta)] text-white px-5 py-3 rounded-md font-bold text-base hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.13c-.28-.14-1.67-.82-1.93-.92-.26-.09-.45-.14-.64.14-.19.28-.73.92-.89 1.11-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.28.28-.47.09-.19.05-.36-.02-.51-.07-.14-.64-1.55-.87-2.12-.23-.58-.47-.48-.64-.48-.17 0-.36-.02-.55-.02-.19 0-.49.07-.74.35-.25.28-.96.94-.96 2.3 0 1.36.98 2.67 1.13 2.85.15.19 1.95 3.03 4.73 4.2.65.28 1.17.45 1.57.57.66.2 1.26.18 1.73.11.51-.07 1.67-.68 1.9-1.33.24-.65.24-1.21.17-1.33z" /></svg>
+                    <span>Hablar con un asesor</span>
                 </a>
             </div>
         </div>
@@ -165,17 +187,22 @@
     <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
         <div class="absolute inset-0">
             <img src="https://ftyatux.stripocdn.email/content/guids/CABINET_39e0f84f4f8b2b9ec7be86c3a8be9dec1bd7c04840e37cf10861a776dd82a39e/images/proyecto_nuevo_2.jpg" 
-                 alt="Impresionante atardecer sobre las montañas del Valle del Cauca, visto desde un lote campestre." 
+                 alt="Atardecer en lote campestre en venta en el Valle del Cauca." 
                  class="w-full h-full object-cover">
         </div>
         <div class="absolute inset-0 hero-gradient"></div>
         <div class="relative z-10 px-4 text-white">
             <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);">
-                Adiós al Estrés. Hola, Futuro.
+                Invierte en Lotes Campestres y Mejora tu Vida
             </h1>
             <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto font-light" style="text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);">
-                Descubre por qué invertir en un lote campestre es la mejor decisión para tu salud y la de tu familia.
+                Descubre por qué comprar un lote campestre en el Valle del Cauca es la mejor inversión para tu salud y tu futuro.
             </p>
+            <div class="mt-8">
+                <a href="#donde-invertir" class="inline-block bg-[var(--color-cta)] text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
+                    Ver Proyectos Disponibles
+                </a>
+            </div>
         </div>
     </header>
 
@@ -184,24 +211,24 @@
         <section id="beneficios" class="py-16 md:py-24 px-6 bg-white">
             <div class="max-w-4xl mx-auto">
                 <div class="text-center">
-                    <h2 class="text-3xl md:text-4xl font-bold">El Costo Oculto de la Vida en la Ciudad</h2>
-                    <p class="mt-4 text-lg max-w-3xl mx-auto">La vida en las vibrantes ciudades del Valle ofrece increíbles oportunidades, pero también tiene un costo que a menudo ignoramos.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">¿Cansado del Estrés de la Ciudad? Hay una Solución</h2>
+                    <p class="mt-4 text-lg max-w-3xl mx-auto">La vida urbana en Cali es emocionante, pero el tráfico, el ruido y la falta de espacio pasan factura a tu salud y bienestar.</p>
                 </div>
                 <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Estrés Crónico</h3>
-                        <p>El "corre corre" diario, el tráfico y las presiones laborales elevan constantemente el cortisol, afectando tu sueño y energía.</p>
+                        <h3 class="text-xl font-semibold mb-2">Estrés y Ansiedad</h3>
+                        <p>El ritmo acelerado de la ciudad eleva el cortisol, afectando tu descanso y tu paz mental. Un lote campestre es tu escape personal.</p>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Contaminación y Ruido</h3>
-                        <p>La exposición prolongada al ruido y al aire cargado de partículas impacta tu salud cardiovascular y respiratoria.</p>
+                        <h3 class="text-xl font-semibold mb-2">Aire y Ruido Contaminado</h3>
+                        <p>La salud respiratoria y auditiva se ve comprometida. Imagina despertar con el sonido de los pájaros, no con el tráfico.</p>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Desconexión Natural</h3>
-                        <p>Vivir rodeados de concreto limita el espacio vital, especialmente para los niños, afectando su desarrollo y creatividad.</p>
+                        <h3 class="text-xl font-semibold mb-2">Falta de Espacio Verde</h3>
+                        <p>Limita el desarrollo y la libertad, especialmente para los niños. Un lote te da el espacio para crear, jugar y respirar aire puro.</p>
                     </div>
                 </div>
-                <p class="mt-12 text-center text-lg italic">Si te identificas, no es debilidad, es una llamada de atención. Tu cuerpo y mente piden un cambio.</p>
+                <p class="mt-12 text-center text-lg italic">Invertir en un lote campestre no es un lujo, es una decisión inteligente para tu salud física y mental.</p>
             </div>
         </section>
 
@@ -209,64 +236,58 @@
         <section id="proyectos" class="py-16 md:py-24 px-6">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold">Cómo un Lote Campestre Transforma tu Salud</h2>
-                    <p class="mt-4 text-lg max-w-3xl mx-auto">Invertir en un lote no es un lujo, es una estrategia de bienestar proactiva con beneficios tangibles.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">Tu Inversión en Calidad de Vida</h2>
+                    <p class="mt-4 text-lg max-w-3xl mx-auto">Más que tierra, estás comprando un futuro más saludable, tranquilo y conectado con la naturaleza.</p>
                 </div>
 
-                <!-- Salud Mental y Física -->
                 <div class="grid md:grid-cols-2 gap-16 items-center">
                     <div class="space-y-8">
                         <div>
-                            <h3 class="text-2xl font-semibold mb-2">Salud Mental: Tu Santuario Personal</h3>
-                            <p>Imagina cambiar el ruido de la ciudad por el canto de los pájaros. La naturaleza reduce drásticamente el estrés (terapia de bosque o Shinrin-yoku) y fomenta una mente clara y creativa.</p>
+                            <h3 class="text-2xl font-semibold mb-2">Bienestar Mental y Reducción del Estrés</h3>
+                            <p>Está comprobado que el contacto con la naturaleza disminuye el estrés. Tu lote en Dapa o Palmira será tu santuario para recargar energías.</p>
                         </div>
                         <div>
-                            <h3 class="text-2xl font-semibold mb-2">Salud Física: Un Estilo de Vida Activo</h3>
-                            <p>El aire puro, el movimiento natural al cuidar tu jardín o caminar por senderos, y la posibilidad de cultivar tus propios alimentos combaten el sedentarismo y mejoran tu nutrición.</p>
+                            <h3 class="text-2xl font-semibold mb-2">Salud Física y Actividad al Aire Libre</h3>
+                            <p>Disfruta de aire más puro, cultiva tus alimentos o simplemente camina por tus propios senderos. Un estilo de vida activo se vuelve natural.</p>
                         </div>
                     </div>
                     <div>
                         <img src="https://ftyatux.stripocdn.email/content/guids/CABINET_1f1e0e8937823fc0aca655a561bd3484c0a10edd21f9a2837d73c8c364030968/images/proyecto_nuevo_1.jpg" 
-                             alt="Un sendero tranquilo en un bosque frondoso, representando la terapia de bosque y la salud." 
+                             alt="Familia disfrutando de su lote campestre en el Valle del Cauca." 
                              class="rounded-lg shadow-xl w-full h-full object-cover">
                     </div>
                 </div>
 
-                <!-- Tabla Comparativa -->
                 <div class="mt-20">
+                    <h3 class="text-2xl md:text-3xl font-bold text-center mb-8 animate-on-scroll">Compara tu Calidad de Vida</h3>
                     <table class="table-custom w-full text-sm md:text-base">
                         <thead>
                             <tr>
-                                <th class="p-4 text-white font-semibold text-left">Beneficio</th>
+                                <th class="p-4 text-white font-semibold text-left">Factor Clave</th>
                                 <th class="p-4 text-white font-semibold text-left">Vida en la Ciudad</th>
                                 <th class="p-4 text-white font-semibold text-left">Vida en tu Lote Campestre</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="p-4 font-semibold">Entorno Sonoro</td>
-                                <td class="p-4">Ruido constante de tráfico y construcción.</td>
-                                <td class="p-4">Sonidos de la naturaleza: pájaros, viento.</td>
+                                <td class="p-4 font-semibold">Entorno</td>
+                                <td class="p-4">Ruido, tráfico, contaminación.</td>
+                                <td class="p-4">Paz, silencio, sonidos de la naturaleza.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold">Calidad del Aire</td>
-                                <td class="p-4">Contaminación por vehículos e industria.</td>
-                                <td class="p-4">Aire puro, rico en oxígeno.</td>
+                                <td class="p-4 font-semibold">Valorización</td>
+                                <td class="p-4">Estable pero limitada.</td>
+                                <td class="p-4">Alto potencial de plusvalía en zonas como Dapa y Palmira.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold">Nivel de Estrés</td>
-                                <td class="p-4">Alto y constante.</td>
-                                <td class="p-4">Reducido, con picos de relajación.</td>
+                                <td class="p-4 font-semibold">Salud</td>
+                                <td class="p-4">Riesgos asociados al estrés y la polución.</td>
+                                <td class="p-4">Mejora la salud mental y física.</td>
                             </tr>
                             <tr>
-                                <td class="p-4 font-semibold">Espacio Personal</td>
-                                <td class="p-4">Limitado, a menudo en apartamentos.</td>
-                                <td class="p-4">Amplio, con libertad para diseñar y moverse.</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-semibold">Actividad Física</td>
-                                <td class="p-4">Requiere un esfuerzo consciente (gimnasio).</td>
-                                <td class="p-4">Integrada de forma natural en el día a día.</td>
+                                <td class="p-4 font-semibold">Espacio</td>
+                                <td class="p-4">Apartamentos y espacios reducidos.</td>
+                                <td class="p-4">Libertad para construir y disfrutar de amplias zonas verdes.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -278,21 +299,21 @@
         <section id="inversion" class="py-16 md:py-24 px-6 bg-white">
             <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold">Invertir en tu Futuro Hoy</h2>
-                    <p class="mt-4 text-lg max-w-3xl mx-auto">Comprar un lote campestre en el Valle del Cauca es una decisión que une lo mejor de dos mundos: una inversión financiera sólida y una inversión incalculable en tu bienestar.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">Una Inversión Inteligente para tu Patrimonio</h2>
+                    <p class="mt-4 text-lg max-w-3xl mx-auto">Comprar un lote en el Valle del Cauca es una decisión financiera sólida y un legado invaluable para tu familia.</p>
                 </div>
                 <div class="grid md:grid-cols-3 gap-8 text-center">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Rentabilidad y Plusvalía</h3>
-                        <p>La tierra es un activo que se valoriza. Zonas en desarrollo como Dapa y Palmira aseguran el crecimiento de tu inversión.</p>
+                        <h3 class="text-xl font-semibold mb-2">Alta Plusvalía</h3>
+                        <p>La tierra es un activo refugio que se valoriza con el tiempo. La demanda de lotes campestres cerca de Cali está en auge.</p>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Legado Familiar</h3>
-                        <p>Creas un patrimonio, un punto de encuentro donde tus hijos y nietos forjarán recuerdos para toda la vida.</p>
+                        <h3 class="text-xl font-semibold mb-2">Construye tu Legado</h3>
+                        <p>No solo inviertes en un activo, sino en un espacio para crear recuerdos familiares que perdurarán por generaciones.</p>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Libertad para Construir</h3>
-                        <p>Un lienzo en blanco para diseñar y construir la casa de tus sueños, adaptada 100% a las necesidades de tu familia.</p>
+                        <h3 class="text-xl font-semibold mb-2">Libertad de Diseño</h3>
+                        <p>Diseña y construye la casa que siempre has querido, 100% a tu gusto y medida, sin las limitaciones de la ciudad.</p>
                     </div>
                 </div>
             </div>
@@ -302,40 +323,40 @@
         <section id="donde-invertir" class="py-16 md:py-24 px-6">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold">Elige Tu Próximo Horizonte</h2>
-                    <p class="mt-4 text-lg max-w-3xl mx-auto">Te presentamos dos proyectos únicos, pensados para quienes buscan exclusividad, naturaleza y una conexión real con el entorno.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">Proyectos Exclusivos: Lotes en Venta en Dapa y Palmira</h2>
+                    <p class="mt-4 text-lg max-w-3xl mx-auto">Te presentamos nuestros dos proyectos estrella, ubicados estratégicamente para ofrecerte lo mejor del campo cerca de la ciudad.</p>
                 </div>
                 <div class="grid md:grid-cols-2 gap-12">
-                    <!-- Tarjeta Proyecto 1: Palo Alto -->
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="relative">
                             <img src="https://ftyatux.stripocdn.email/content/guids/CABINET_1f1e0e8937823fc0aca655a561bd3484c0a10edd21f9a2837d73c8c364030968/images/proyecto_nuevo_3.jpg" 
-                                 alt="Vista panorámica del proyecto de lotes campestres Palo Alto en Palmira." 
+                                 alt="Lotes en venta en Palmira, proyecto Palo Alto." 
                                  class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             <h3 class="absolute bottom-4 left-4 text-3xl font-bold text-white font-['Playfair_Display']" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">Proyecto Palo Alto</h3>
                         </div>
                         <div class="p-8 flex-grow flex flex-col">
-                            <p class="text-base mb-6 flex-grow">Ubicado en Palmira, Palo Alto ofrece un refugio de paz con un clima ideal. Es el lugar perfecto para construir la casa de campo que siempre has soñado, rodeado de paisajes verdes y tranquilidad.</p>
+                            <h4 class="text-xl font-semibold mb-2">Ubicación: Palmira, Valle del Cauca</h4>
+                            <p class="text-base mb-6 flex-grow">Palo Alto es tu refugio de paz con un clima ideal. Perfecto para construir tu casa de campo soñada, rodeado de paisajes verdes y con una excelente proyección de valorización. ¡Comprar lote en Palmira nunca fue tan atractivo!</p>
                             <a href="https://ventadelotescampestresenpalmira.aypch.com/" 
                                target="_blank" 
                                rel="noopener noreferrer"
                                class="mt-auto text-center bg-[var(--color-cta)] text-white px-8 py-3 rounded-md font-bold text-base hover:bg-[var(--color-cta-hover)] transition-all transform group-hover:scale-105 shadow-lg">
-                                Ver Proyecto Palo Alto
+                                Más Información sobre Palo Alto
                             </a>
                         </div>
                     </div>
-                    <!-- Tarjeta Proyecto 2: Cascadas de Dapa -->
                     <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col group transform hover:-translate-y-2 transition-transform duration-300">
                         <div class="relative">
                             <img src="https://ftyatux.stripocdn.email/content/guids/CABINET_1f1e0e8937823fc0aca655a561bd3484c0a10edd21f9a2837d73c8c364030968/images/proyecto_nuevo_2.png" 
-                                 alt="Paisaje montañoso y fresco del proyecto Cascadas de Dapa 2." 
+                                 alt="Lotes en venta en Dapa, proyecto Cascadas de Dapa 2." 
                                  class="w-full h-64 object-cover">
                             <div class="absolute inset-0 bg-black bg-opacity-20"></div>
                             <h3 class="absolute bottom-4 left-4 text-3xl font-bold text-white font-['Playfair_Display']" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">Cascadas de Dapa 2</h3>
                         </div>
                         <div class="p-8 flex-grow flex flex-col">
-                            <p class="text-base mb-6 flex-grow">En el corazón de Dapa, este proyecto te sumerge en un microclima fresco y vistas espectaculares. Ideal para quienes valoran la exclusividad y un estilo de vida conectado con la majestuosidad de la montaña.</p>
+                            <h4 class="text-xl font-semibold mb-2">Ubicación: Dapa, Valle del Cauca</h4>
+                            <p class="text-base mb-6 flex-grow">En el corazón de Dapa, este proyecto te ofrece un microclima fresco y vistas espectaculares. Los lotes en Dapa son sinónimo de exclusividad y un estilo de vida conectado con la montaña, a minutos de Cali.</p>
                             <a href="https://ventadelotescampestresenpalmira.aypch.com/lotes-en-venta-cali/" 
                                target="_blank" 
                                rel="noopener noreferrer"
@@ -351,22 +372,23 @@
         <!-- ========= CTA FINAL: La Llamada a la Acción ========= -->
         <section class="py-16 md:py-24 px-6 bg-white">
             <div class="max-w-3xl mx-auto text-center bg-[var(--color-fondo)] p-8 md:p-12 rounded-lg shadow-2xl">
-                <h2 class="text-3xl md:text-4xl font-bold">¿Estás Listo para Dar el Siguiente Paso?</h2>
+                <h2 class="text-3xl md:text-4xl font-bold animate-on-scroll">¿Listo para Invertir en tu Calidad de Vida?</h2>
                 <p class="mt-6 text-lg">
-                    Si has llegado hasta aquí, es porque sientes el llamado. Quieres escapar del ruido, respirar más profundo y darle a tu familia la calidad de vida que se merece.
+                    Has visto los beneficios. Sientes el llamado a un futuro más tranquilo y saludable. Es el momento de dar el siguiente paso.
                 </p>
                 <p class="mt-4 text-lg font-semibold">
-                    Nuestros proyectos en <span style="color: var(--color-acento-verde);">Palo Alto (Palmira)</span> y <span style="color: var(--color-acento-verde);">Cascadas de Dapa 2 (Dapa)</span> están diseñados para personas como tú, que buscan un lugar para prosperar.
+                    Contacta a nuestros asesores expertos y recibe toda la información sobre los lotes en venta en <span style="color: var(--color-acento-verde);">Palo Alto (Palmira)</span> y <span style="color: var(--color-acento-verde);">Cascadas de Dapa 2 (Dapa)</span>.
                 </p>
                 <div class="mt-10">
                     <a href="https://wa.link/xc6a7s" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       class="inline-block bg-[var(--color-cta)] text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
-                        CONTACTAR Y RECIBIR MÁS INFORMACIÓN
+                       class="inline-flex items-center justify-center space-x-2 bg-[var(--color-cta)] text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[var(--color-cta-hover)] transition-all transform hover:scale-105 shadow-lg">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.13c-.28-.14-1.67-.82-1.93-.92-.26-.09-.45-.14-.64.14-.19.28-.73.92-.89 1.11-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.28.28-.47.09-.19.05-.36-.02-.51-.07-.14-.64-1.55-.87-2.12-.23-.58-.47-.48-.64-.48-.17 0-.36-.02-.55-.02-.19 0-.49.07-.74.35-.25.28-.96.94-.96 2.3 0 1.36.98 2.67 1.13 2.85.15.19 1.95 3.03 4.73 4.2.65.28 1.17.45 1.57.57.66.2 1.26.18 1.73.11.51-.07 1.67-.68 1.9-1.33.24-.65.24-1.21.17-1.33z" /></svg>
+                        <span>Solicitar Asesoría por WhatsApp</span>
                     </a>
                 </div>
-                <p class="mt-6 text-sm text-gray-500">No esperes a que el estrés te pase factura. Invierte en tu salud. Invierte en tu futuro.</p>
+                <p class="mt-6 text-sm text-gray-500">No esperes más. Invierte en tierra, invierte en tu futuro.</p>
             </div>
         </section>
     </main>
@@ -374,52 +396,43 @@
     <!-- ========= FOOTER CON REDES SOCIALES ========= -->
     <footer class="bg-[var(--color-titulo)] text-white py-12 px-6">
         <div class="max-w-7xl mx-auto text-center">
-            <h3 class="text-2xl font-bold font-['Playfair_Display'] mb-2">Comparte esta Oportunidad</h3>
-            <p class="mb-6 text-gray-300">Si conoces a alguien que sueña con un futuro más tranquilo, ¡compártele esta página!</p>
+            <h3 class="text-2xl font-bold font-['Playfair_Display'] mb-2">Asesorías y Parcelaciones CH</h3>
+            <p class="mb-6 text-gray-300">Tu aliado para invertir en lotes campestres en el Valle del Cauca.</p>
             <div class="flex justify-center items-center space-x-4">
-                <!-- Facebook -->
                 <a href="#" id="share-facebook" target="_blank" rel="noopener noreferrer" class="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-300 transform hover:scale-110">
                     <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
                 </a>
-                <!-- Twitter (X) -->
                 <a href="#" id="share-twitter" target="_blank" rel="noopener noreferrer" class="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-300 transform hover:scale-110">
                     <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
                 </a>
-                <!-- WhatsApp -->
                 <a href="#" id="share-whatsapp" target="_blank" rel="noopener noreferrer" class="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-300 transform hover:scale-110">
                     <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.13c-.28-.14-1.67-.82-1.93-.92-.26-.09-.45-.14-.64.14-.19.28-.73.92-.89 1.11-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.28.28-.47.09-.19.05-.36-.02-.51-.07-.14-.64-1.55-.87-2.12-.23-.58-.47-.48-.64-.48-.17 0-.36-.02-.55-.02-.19 0-.49.07-.74.35-.25.28-.96.94-.96 2.3 0 1.36.98 2.67 1.13 2.85.15.19 1.95 3.03 4.73 4.2.65.28 1.17.45 1.57.57.66.2 1.26.18 1.73.11.51-.07 1.67-.68 1.9-1.33.24-.65.24-1.21.17-1.33z" /></svg>
                 </a>
             </div>
             <div class="mt-8 pt-8 border-t border-white/20">
                 <p class="text-sm text-gray-400">&copy; 2025 Asesorías y parcelaciones CH. Todos los derechos reservados.</p>
-                <p class="text-xs text-gray-500 mt-2">Diseñado para una vida mejor.</p>
+                <p class="text-xs text-gray-500 mt-2">Venta de lotes campestres en Cali, Dapa y Palmira.</p>
             </div>
         </div>
     </footer>
 
     <!-- ========= BOTÓN DE ACCIÓN FLOTANTE (FAB) ========= -->
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-center">
-        <!-- Opciones del FAB (inicialmente ocultas) -->
         <div id="fab-options" class="flex flex-col items-center space-y-3 mb-3 fab-options opacity-0 transform scale-95 pointer-events-none">
-            <!-- Botón Llamar -->
             <a href="tel:+573123456789" class="group relative flex justify-center items-center w-14 h-14 bg-white text-[var(--color-titulo)] rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                 <span class="absolute right-full mr-4 px-2 py-1 bg-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Llamar ahora</span>
             </a>
-            <!-- Botón WhatsApp -->
             <a href="https://wa.link/xc6a7s" target="_blank" rel="noopener noreferrer" class="group relative flex justify-center items-center w-14 h-14 bg-white text-[var(--color-titulo)] rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300">
                 <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zM12.04 20.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31c-.82-1.31-1.26-2.83-1.26-4.38 0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.24-8.24 8.24zm4.52-6.13c-.28-.14-1.67-.82-1.93-.92-.26-.09-.45-.14-.64.14-.19.28-.73.92-.89 1.11-.16.19-.32.21-.6.07-.28-.14-1.18-.44-2.25-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.19-.28.28-.47.09-.19.05-.36-.02-.51-.07-.14-.64-1.55-.87-2.12-.23-.58-.47-.48-.64-.48-.17 0-.36-.02-.55-.02-.19 0-.49.07-.74.35-.25.28-.96.94-.96 2.3 0 1.36.98 2.67 1.13 2.85.15.19 1.95 3.03 4.73 4.2.65.28 1.17.45 1.57.57.66.2 1.26.18 1.73.11.51-.07 1.67-.68 1.9-1.33.24-.65.24-1.21.17-1.33z" /></svg>
                 <span class="absolute right-full mr-4 px-2 py-1 bg-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Ir a WhatsApp</span>
             </a>
-            <!-- Botón Compartir -->
             <button id="fab-share" class="group relative flex justify-center items-center w-14 h-14 bg-white text-[var(--color-titulo)] rounded-full shadow-lg hover:bg-gray-200 transition-all duration-300">
                 <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12s-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"></path></svg>
                 <span class="absolute right-full mr-4 px-2 py-1 bg-gray-700 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Compartir</span>
             </button>
         </div>
-        <!-- Botón Principal del FAB -->
         <button id="fab-main" class="w-16 h-16 bg-[var(--color-cta)] text-white rounded-full flex items-center justify-center shadow-xl hover:bg-[var(--color-cta-hover)] transform hover:scale-110 transition-all duration-300 fab-main-button">
-            <!-- Icono de '+' que se transforma en 'x' -->
             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
         </button>
     </div>
@@ -427,7 +440,6 @@
     <!-- JavaScript para la interactividad -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // --- Lógica del Header ---
             const nav = document.getElementById('main-nav');
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
@@ -450,7 +462,6 @@
             
             document.querySelectorAll('#mobile-menu a, #main-nav a[href^="#"]').forEach(link => {
                 link.addEventListener('click', (e) => {
-                    // Cierra el menú móvil si está abierto
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                         burgerIcon.classList.remove('hidden');
@@ -459,7 +470,6 @@
                 });
             });
 
-            // --- Lógica para compartir en redes (Footer) ---
             const pageUrl = encodeURIComponent(window.location.href);
             const pageTitle = encodeURIComponent(document.title);
 
@@ -467,7 +477,6 @@
             document.getElementById('share-twitter').href = `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`;
             document.getElementById('share-whatsapp').href = `https://api.whatsapp.com/send?text=${pageTitle}%20${pageUrl}`;
 
-            // --- Lógica para el Botón de Acción Flotante (FAB) ---
             const fabMainBtn = document.getElementById('fab-main');
             const fabOptions = document.getElementById('fab-options');
             const fabShareBtn = document.getElementById('fab-share');
@@ -480,7 +489,6 @@
                 fabMainBtn.classList.toggle('rotate-45');
             });
 
-            // Cerrar el FAB si se hace clic fuera de él
             document.addEventListener('click', (event) => {
                 if (!fabMainBtn.contains(event.target) && !fabOptions.contains(event.target)) {
                     fabOptions.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
@@ -488,23 +496,18 @@
                 }
             });
             
-            // Lógica para el botón de compartir del FAB
             fabShareBtn.addEventListener('click', async (event) => {
-                event.stopPropagation(); // Evita que se cierre el menú FAB al hacer clic
+                event.stopPropagation();
                 const shareData = {
                     title: document.title,
-                    text: 'Echa un vistazo a esta increíble oportunidad de inversión.',
+                    text: 'Echa un vistazo a esta increíble oportunidad de inversión en lotes campestres.',
                     url: window.location.href,
                 };
 
                 try {
-                    // Usar la API de Share nativa si está disponible
                     if (navigator.share) {
                         await navigator.share(shareData);
-                        console.log('Contenido compartido exitosamente');
                     } else {
-                        // Fallback para navegadores de escritorio: copiar al portapapeles
-                        // Usamos el método execCommand por compatibilidad con iframes
                         const textArea = document.createElement('textarea');
                         textArea.value = window.location.href;
                         document.body.appendChild(textArea);
@@ -512,7 +515,22 @@
                         textArea.select();
                         try {
                             document.execCommand('copy');
-                            alert('¡Enlace copiado al portapapeles!');
+                            const alertBox = document.createElement('div');
+                            alertBox.textContent = '¡Enlace copiado al portapapeles!';
+                            alertBox.style.position = 'fixed';
+                            alertBox.style.bottom = '20px';
+                            alertBox.style.left = '50%';
+                            alertBox.style.transform = 'translateX(-50%)';
+                            alertBox.style.backgroundColor = '#2C3E50';
+                            alertBox.style.color = 'white';
+                            alertBox.style.padding = '10px 20px';
+                            alertBox.style.borderRadius = '8px';
+                            alertBox.style.zIndex = '1000';
+                            alertBox.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+                            document.body.appendChild(alertBox);
+                            setTimeout(() => {
+                                document.body.removeChild(alertBox);
+                            }, 3000);
                         } catch (err) {
                             console.error('No se pudo copiar el enlace: ', err);
                         }
@@ -521,6 +539,23 @@
                 } catch (err) {
                     console.error('Error al compartir:', err);
                 }
+            });
+            
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            animatedElements.forEach(element => {
+                observer.observe(element);
             });
         });
     </script>
